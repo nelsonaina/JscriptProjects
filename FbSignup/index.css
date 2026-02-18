@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f6f7;
+}
+
+.shortText {
+    font-size: 1.2rem;
+    border: 1px solid;
+    border-radius: 10px;
+    /* height: 50px; */
+    padding: 17px 33px;
+}
+
+.longText {
+    font-size: 1.2rem;
+    border: 1px solid;
+    border-radius: 10px;
+    /* height: 50px; */
+    padding: 17px 33px;
+}
+
+#heading {
+    background-color: #1677f2;
+    display: flex;
+    justify-content: space-between;
+} 
+
+#headerText {
+    padding: 20px 2.5em;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#facebookLogo {
+    cursor: pointer;
+}
+
+#login {
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    margin: 10px 45px;
+}
+
+#emailText, #passwordAndText, #firstButtonContainer {
+    padding: 5px;
+}
+
+
+
+#loginButton {
+    background-color: #0c52b0;
+    padding: 15px 40px;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+
+#passwordAndText {
+    padding-top: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-end;
+}
+
+#passwordAndText,label {
+    cursor: pointer;
+}
+
+
+#textAndSign {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px;
+}
+
+
+#allText {
+    margin: 30px;
+    padding: 0px 0px 0px 80px;
+}
+
+#boldHeader {
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+
+#listText {
+    margin-top: 20px;
+}
+
+.emojiAndText {
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 30px;
+}
+
+.emoji {
+    font-size: 5rem;
+    opacity: 0.6;
+}
+
+.littleText {
+    font-size: 1.4rem;
+    margin-left: 10px;
+}
+
+
+#signUp {
+    margin-right: 175px;
+}
+
+#signUpHeaderText {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#signUpBodyText {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#signUpInputs {
+    padding-bottom: 10px;
+}
+
+#signUpShortText {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#signUpShortText {
+    padding-bottom: 20px;
+}
+
+#signUpLongText {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+#birthdayText {
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+#birthDaySection {
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+.selectionSection {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shorterText {
+    font-size: 1.2rem;
+    border: 1px solid;
+    border-radius: 10px;
+    width: 145px;
+    padding: 15px 10px;
+}
+
+#genderText {
+    font-size: 1.2rem;
+}
+
+#genderSection {
+    margin-top: 10px;
+}
+
+.radioDesign {
+    width: 140px;
+    font-size: 1.2rem;
+    border: 1px solid;
+    border-radius: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 9px;
+    appearance: none;
+    background-color: white;
+}
+
+.veryShortInput {
+    border: 0.15em solid black;
+}
+
+
+#termsAndCondition {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+#signUpButtonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#signUpButton {
+    background-color: #00A300;
+    padding: 15px 80px;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+
+#lastText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#lastErrorText {
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FaceLook</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav id="heading">
+        <div id="headerText" >
+        <p id="facebookLogo">facelook</p>
+        </div>
+        <div id="login">
+            <div id="emailText">
+            <input type="text" placeholder="Email or Phone" class="shortText" id="emailOne">
+            </div>
+            <div id="passwordAndText">
+                <input type="text" placeholder="Password" class="shortText" id="password">
+                <label for="password" style="color: white;" onclick="forgotPassword()">Forgot account?</label>
+            </div>
+            <div id="firstButtonContainer">
+            <button type="button" id="loginButton" onclick="login()">Log In</button>
+            </div>
+
+        </div>
+    </nav>
+
+    <section id="textAndSign">
+        <div id="allText">
+            <div id="boldHeader">
+                Connect With friends and the <br> World around you on <br> Facelook.
+            </div>
+            <div id="listText">
+                <div class="emojiAndText">
+                    <p class="emoji">📄</p>
+                    <p class="littleText"> <b>See Photos and updates</b> from friends in New Feed.</p>
+                </div>
+                <div class="emojiAndText">
+                    <p class="emoji">📦</p>
+                    <p class="littleText"> <b>Share Whats new</b> in your life on your Timeline.</p>
+                </div>
+                <div class="emojiAndText">
+                <p class="emoji">🔎</p>
+                <p class="littleText"> <b>Find more </b> of what you are looking for with Facebook <br> Search.</p>
+                </div>
+            </div>
+        </div>
+        <div id="signUp">
+            <div id="signUpHeader">
+                <h2 id="signUpHeaderText">Sign Up</h2>
+                <p id="signUpBodyText">It's quick and easy</p>
+            </div>
+            <div id="signUpInputs">
+                <div id="signUpShortText">
+                    <input type="text" placeholder="First Name" class="shortText" id="firstName">
+                    <input type="text" placeholder="Last Name" class="shortText" id="lastName">
+                </div>
+                <div id="signUpLongText">
+                    <input type="text" placeholder="Mobile number or email" class="longText" id="signupEmail">
+                    <input type="text" placeholder="New password" class="longText" id="newPassword">
+                </div>
+            </div>
+
+            <label id="birthdayText">Birthday</label>
+            <div id="birthDaySection" class="selectionSection">
+                <input type="text" placeholder="Sep" class="shorterText">
+                <input type="text" placeholder="18" class="shorterText">
+                <input type="text" placeholder="1994" class="shorterText">
+            </div>
+            <label id="genderText">Gender</label>
+            <div id="genderSection" class="selectionSection">
+                <div class="radioDesign">
+                <input type="radio" id="female" class="veryShortInput" name="card">
+                <label for="female">Female</label>
+                </div>
+                <div class="radioDesign">
+                <input type="radio" id="male" class="veryShortInput" name="card">
+                <label for="male">Male</label>
+                </div>
+                <div class="radioDesign">
+                <input type="radio" id="Custom" class="veryShortInput" name="card">
+                <label for="Custom">Custom</label>
+                </div>
+
+            </div>
+            <div id="termsAndCondition">
+                <p>By clicking Sign Up, you agree to our Terms, Data Policy and Cookies Policy. <br>
+                    You may receive SMS Notifications from us and can opt out any time.</p>
+            </div>
+
+            <div id="signUpButtonContainer">
+                <button onclick="signUp()" id="signUpButton">Sign Up</button>
+            </div>
+
+            <div id="lastErrorText" >
+                <p id="errorText" style="display: none;">Invalid Gmail/Password</p>
+            </div>
+            <div id="lastText">
+                <p> <b>Create a Page</b> for a celebrity, band or business.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <div>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>

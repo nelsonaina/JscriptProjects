@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #D2D0D1;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-size: 3.5rem;
+    margin: 0;
+    padding: 15px;
+    font-weight: bold;
+    
+}
+
+#searchBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+
+#myText {
+   border: none;
+    padding: 10px;
+    width: 50%;
+    font-size: 1.5rem;
+}
+
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #5D4E4F;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    
+}
+
+button[type="submit"]:hover {
+        background-color: #6e5c5d;
+}
+
+.allList {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+
+.allList, .lists {
+    border: 1px solid;
+    width: 100%;
+}
+
+.lists {
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: #988686;
+}
+.lists:hover {
+        background-color: #a69191;
+}
+
+#remBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#removeButton {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #5D4E4F;
+    color: white;
+}
+
+#removeButton:hover {
+        background-color: #6e5c5d;
+}
+
