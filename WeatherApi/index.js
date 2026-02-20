@@ -1,8 +1,11 @@
 //weather 
+
+
+//////////!!!!!!!!!!!!!!!remove apikey
 const weatherForm = document.querySelector(".weatherForm");
 const cityInput = document.querySelector(".cityName");
 const card = document.querySelector(".card");
-const apiKey = "";
+const apiKey = ""; //remove
 
 
 weatherForm.addEventListener("submit", async (event) => {
@@ -31,7 +34,6 @@ async function getWeatherData(city) {
         throw new Error("Could not fetch weather data");
     }
     return await response.json();
-
 }
 
 

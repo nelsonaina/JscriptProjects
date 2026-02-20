@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #0b0f1a;
+    font-family: 'Ubuntu', 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: #f1f5f9;
+}
+
+
+#container {
+    max-width: 1200px;
+    margin: 10px auto;
+    padding:50px;
+}
+
+
+#header {
+    /* border: 2px solid;
+    border-radius: 30px;
+    border-color: #e53170; */
+    padding: 30px;
+    letter-spacing: 0.2px;
+    margin-bottom: 20px;
+}
+
+#header-text {
+    color: #fffffe;
+    font-weight: bold;
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bodyContainer {
+    border: 2px solid;
+    border-color: rgba(59,130,246,0.25);
+    border-radius: 30px;
+    padding: 20px;
+    background-color: #121826;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1060px;
+    margin: 20px auto;
+    padding: 5px 0px;
+}
+
+#searchBar {
+    padding: 15px 20px;
+    font-size: 1.5rem;
+    border: 2px solid;
+    border-radius: 30px;
+    border-color: rgba(59,130,246,0.25);
+    width: 20em;
+    color: #f1f5f9;
+    background-color: #1a2235;
+}
+
+
+#submitButton {
+    color: #f1f5f9;
+    padding: 12px 24px;
+    background-color: #3b82f6;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 600;
+    align-items: center;
+    transition: 0.5s;
+}
+
+#submitButton:hover {
+    background-color: #60a5fa;
+    transition: 0.5s;
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(59,130,246,0.6);
+}
+
+#errorMessage {
+    color: red;
+    border: 3px solid;
+    border-radius: 17px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1060px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+
+
+#flagAndCountry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    max-width: 1060px;
+    margin: 20px auto;
+    padding: 2rem 0rem;
+}
+
+
+.flagClass {
+    width: 500px;
+    flex-shrink: 0;
+    height: auto;
+}
+
+.flagClass img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.countryInfo {
+    width: 50%;
+    border: 1px solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-color: rgba(59,130,246,0.25);
+    background-color: #1a2235;
+}
+
+.countryParagraph {
+    color: #94a3b8;
+    font-size: 1.5rem;
+    padding: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: -1px;
+    /* border: 1px solid; */
+}
+
+
+
+
+@media (max-width: 54em) {
+    #errorMessage {
+        width: 80%;
+    }
+    .search {
+        width: 80%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0px auto;
+        padding: 5px;
+        gap: 10px;
+    }
+    #searchBar {
+        width: 100%;
+
+    }
+    #submitButton {
+        padding: 13px 27px;
+        align-items: center;
+        width: auto;
+        margin: auto;
+    }
+    #flagAndCountry {
+        margin: 20px auto 0px;
+        flex-direction: column-reverse;
+        padding: 0px;
+        gap: 0;
+    }
+    .flagClass {
+        width: 100%;
+        height: auto;
+        padding: 60px 60px 0px;
+    }
+    .flagClass img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .countryInfo {
+        width: 80%;
+    }
+    .countryParagraph {
+        font-size: 1.4rem;
+        padding: 10px;
+    }
+
+
+}
+
+
+@media (max-width: 39em) {
+    #header-text {
+        font-size: 2.3rem;
+    }
+    .countryParagraph {
+        font-size: 0.8rem;
+        padding: 7px;
+    }
+    .flagClass {
+        width: 100%;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 32em) {
+    #header {
+        border-radius: 20px;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+    #header-text {
+        font-size: 1.2rem;
+    }
+    #searchBar {
+        padding: 13px 20px;
+        font-size: 1rem;
+        width: 100%;
+        margin: auto;
+    }
+    #submitButton {
+        padding: 12px 22px;
+        font-size: 1em;
+        border-radius: 5px;
+    }
+    #errorMessage {
+        padding: 6px;
+        font-size: 0.9rem;
+        width: 80%;
+    }
+
+
+}
+
+@media (max-width: 25em) {
+    #submitButton {
+        padding: 10px 15px;
+        font-size: 0.6em;
+        border-radius: 2px;
+    }
+}
+
+@media (max-width: 20em) {
+    #header {
+        padding: 10px;
+    }
+    #header-text {
+        font-size: 1rem;
+    }
+    #searchBar {
+        padding: 6px 20px;
+        font-size: 0.6rem;
+    }
+    #submitButton {
+        padding: 7px 15px;
+        font-size: 0.6em;
+        border-radius: 2px;
+    }
+    #errorMessage {
+        border: 1px solid;
+        padding: 3px 6px;
+        font-size: 0.6rem;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    #flagAndCountry {
+        margin: 10px auto 0px;
+    }
+    .countryParagraph {
+        font-size: 0.6rem;
+        padding: 6px;
+    }
+    .flagClass {
+        width: 100%;
+        padding: 20px;
+    }
+}
